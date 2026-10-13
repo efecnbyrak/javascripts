@@ -1,9 +1,1 @@
 @import "tailwindcss";
-
-/* Tarayıcının varsayılan stillerini korumak için */
-@layer base {
-  button {
-    all: revert;
-  }
-}
-

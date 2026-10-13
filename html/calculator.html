@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+
+    <div class="w-64 mx-auto mt-10 bg-gray-800 p-4 rounded-xl">
+        <div id="display" class="bg-white p-3 mb-3 rounded text-right text-2xl">
+            0
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(1)">1</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(2)">2</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(3)">3</button>
+            <button class="bg-orange-400 p-3 rounded">÷</button>
+
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(4)">4</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(5)">5</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(6)">6</button>
+            <button class="bg-orange-400 p-3 rounded">×</button>
+
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(7)">7</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(8)">8</button>
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(9)">9</button>
+            <button class="bg-orange-400 p-3 rounded">-</button>
+
+            <button class="bg-gray-300 p-3 rounded" onclick="inputNumber(0)">0</button>
+            <button class="bg-red-400 p-3 rounded">C</button>
+            <button class="bg-green-400 p-3 rounded">=</button>
+            <button class="bg-orange-400 p-3 rounded">+</button>
+        </div>
+    </div>
+
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>
