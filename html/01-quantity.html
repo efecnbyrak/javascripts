@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Quantity</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="min-h-screen flex flex-col justify-center items-center gap-4">
+    <div class="flex justify-center gap-4">
+        <button onclick="console.log(`Cart Quantity : ${cartQuantity}`);" class="bg-gray-300 p-3 rounded">Show
+            Quantity</button>
+        <button onclick="cartQuantity += 1; console.log(`Cart Quantity : ${cartQuantity}`);"
+            class="bg-gray-300 p-3 rounded">Add to Cart</button>
+        <button onclick="cartQuantity += 2; console.log(`Cart Quantity : ${cartQuantity}`);"
+            class="bg-gray-300 p-3 rounded">+2</button>
+        <button onclick="cartQuantity += 3; console.log(`Cart Quantity : ${cartQuantity}`);"
+            class="bg-gray-300 p-3 rounded">+3</button>
+        <button onclick="cartQuantity = 0; console.log(`Cart Quantity : ${cartQuantity}`);"
+            class="bg-gray-300 p-3 rounded">Reset Cart</button>
+    </div>
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
