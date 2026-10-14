@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAMPLES</title>
+    <title>Start Begin</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col justify-center items-center gap-4">
     <div class="flex justify-center gap-4">
-        <button onclick="
-            console.log(`Cart Quantity : ${cartQuantity}`);
-        " class="px-4 py-2 rounded-lg">Show Quantity</button>
-        <button onclick="
-            cartQuantity += 1;
-            console.log(`Cart Quantity : ${cartQuantity}`);
-        " class="px-4 py-2 rounded-lg">Add to Cart</button>
-        <button onclick="
-            cartQuantity += 2;
-            console.log(`Cart Quantity : ${cartQuantity}`);
-        " class="px-4 py-2 rounded-lg">+2</button>
-        <button onclick="
-            cartQuantity += 3;
-            console.log(`Cart Quantity : ${cartQuantity}`);
-        " class="px-4 py-2 rounded-lg">+3</button>
-        <button onclick="
-            cartQuantity = 0;
-            console.log(`Cart Quantity : ${cartQuantity}`);
-        " class="px-4 py-2 rounded-lg">Reset Cart</button>
+        <button onclick="console.log(`Cart Quantity : ${cartQuantity}`);" 
+        class="bg-gray-300 p-3 rounded">Show Quantity</button>
+        <button onclick="cartQuantity += 1; console.log(`Cart Quantity : ${cartQuantity}`);" 
+        class="bg-gray-300 p-3 rounded">Add to Cart</button>
+        <button onclick="cartQuantity += 2; console.log(`Cart Quantity : ${cartQuantity}`);"
+        class="bg-gray-300 p-3 rounded">+2</button>
+        <button onclick="cartQuantity += 3; console.log(`Cart Quantity : ${cartQuantity}`);"
+        class="bg-gray-300 p-3 rounded">+3</button>
+        <button onclick="cartQuantity = 0; console.log(`Cart Quantity : ${cartQuantity}`);"
+        class="bg-gray-300 p-3 rounded">Reset Cart</button>
     </div>
-
-    
-
-
-    <script src="/scripts/cart-quantity.js"></script>
-    <script src="/scripts/variables.js"></script>
-    <script src="/scripts/booleans.js"></script>
+    <div>
+        <a href="/html/02-rock-paper-scissors.html" class="bg-red-400 p-3 rounded">Taş Kağıt Makas</a>
+        <a href="" class="bg-red-400 p-3 rounded">EFE</a>
+    </div>
+    <script>let cartQuantity = 0;</script>
+    <!--<script src="/scripts/variables.js"></script>-->
+    <!--<script src="/scripts/booleans.js"></script>-->
 </body>
-</html>
+</html>     
